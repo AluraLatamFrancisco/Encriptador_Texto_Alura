@@ -1,0 +1,14 @@
+body{
+    background: #F3F5FC;
+}
+.Texto_Encrit{
+background: #FFFFFF;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+position: absolute;
+width: 400px;
+height: 944px;
+left: 1000px;
+top: 40px;
+}
+
