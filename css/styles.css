@@ -1,14 +1,68 @@
 body{
     background: #F3F5FC;
+    box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/
+ 
 }
+.bloque{
+    align-items: center;
+    margin: 20px auto; 
+    border: 2px solid;
+    width: 85%;
+    display: flex;
+    vertical-align: auto;
+  
+}
+
+
+.Tam_text{
+display: flex;
+flex-flow: row nowrap;
+background-color: red;   
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border:1px solid;
+width: 80%;
+height: 830px;
+border-radius: 32px;
+
+}
+
 .Texto_Encrit{
+display: flex;
+flex-flow: column nowrap;
 background: #FFFFFF;
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
-position: absolute;
+border: 1px solid;
 width: 400px;
-height: 944px;
-left: 1000px;
-top: 40px;
+height: 830px;
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Contacto{
+border: 1px solid;
+padding: 30px;
+margin: 20px;
+}
+
+footer{
+background-color: aqua;
+    border: 1px solid; 
+    text-align: center;
+    padding: 40px;
+
+}
