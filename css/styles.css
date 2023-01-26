@@ -45,7 +45,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 color: #495057;
-opacity: 0.8;
+opacity: 0.9;
 }
 .Form_text {
 /*border: 3px solid red;*/
@@ -73,13 +73,13 @@ color: #0A3871;
 }
 /*Estilos para Imgen en encriptado*/
 .mun_img{
-border: 2px solid ;
+/*border: 2px solid ;*/
 align-items: center;
 
 }
 .Mensaje{
     margin: 20px;
-    border: 2px solid rebeccapurple; 
+  /*  border: 2px solid rebeccapurple; */
     text-align: center;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
@@ -90,14 +90,15 @@ align-items: center;
 }
 .Mensaje2{
     margin: 20px;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 16px;
     opacity: 0.8;
 }
 .Cont_text_img{
-    border: 2px solid red;
+    margin-top:50%;
+   /* border: 2px solid red;*/
 }
 /*Estilos para los botones */
 .boton{
@@ -107,6 +108,7 @@ border-radius: 20px;
 width: 280px;
 height: 60px;
 font-size: 20px;
+margin-left: 15px;
 }
 
 .inf_txt{
@@ -115,8 +117,8 @@ font-size: 20px;
     margin-left: 400px;
     align-items: center;
     width: 600px;
-    height: 80px;
-   /*border: 3px solid;*/
+    height: 90px;
+   border: 3px solid;
 
 }
 
