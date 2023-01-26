@@ -1,77 +1,125 @@
 body{
-    background: #F3F5FC;
-    box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/
- 
+background: #F3F5FC;
+box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/ 
 }
 .bloque{
-    align-items: center;
-    margin: 20px auto; 
-    border: 2px solid;
-    width: 85%;
-    display: flex;
-    vertical-align: auto;
-  
+align-items: center;
+margin: 20px auto; 
+/*border: 2px solid;*/
+width: 85%;
+display: flex;
+vertical-align: auto;
 }
-
-
+/*Estilo el cuadro de texto*/
 .Tam_text{
 flex-flow: row nowrap;/*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
 /*background-color: red;   */
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-border:1px solid;
+/*border:1px solid;*/
 width: 80%;
 height: 830px;
 border-radius: 32px;
 
-}
 
+}
+/*Agregamos estilos al texto interno del input*/
+.input_text::placeholder{
+font-family: 'Poppins', sans-serif;
+color: #0A3871;
+opacity: 0.8;
+
+}
 .Texto_Encrit{
 flex-flow: column nowrap;
 background: #FFFFFF;
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
-border: 1px solid;
+/*border: 1px solid;*/
 width: 400px;
 height: 830px;
 
 }
+.Form_text p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #495057;
+opacity: 0.8;
+}
 .Form_text {
-  border: 2px solid;
-display: block;
+/*border: 3px solid red;*/
 align-items: center;
 
-
+}
+/*Estilo al cuadro de texto*/
+.input_text{ 
+background: #F3F5FC;
+/*border: 2px solid;*/
+border: none;
+resize: none;
+width:90%;
+height: 630px;
+margin-left: 50px;
+border-radius: 20px;
+font-size: 40px;
+font-family: 'Poppins', sans-serif;
+color: #0A3871;
 
 }
-.input_text{
-    vertical-align: 30px;
-    border: 2px solid;
-    resize: none;
-    align-items: center;
-    width:90%;
-    height: 630px;
-    margin: auto;
-
-
-
+/*Se activa cuando el usuario da clic en el elemento la funcion outline quita el borde al momento de precionar*/
+.input_text:focus{
+    outline: none;
+}
+/*Estilos para Imgen en encriptado*/
+.mun_img{
+border: 2px solid ;
+align-items: center;
 
 }
+.Mensaje{
+    margin: 20px;
+    border: 2px solid rebeccapurple; 
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #343A40;
+    align-self: stretch;
+    font-weight: bold;
+
+}
+.Mensaje2{
+    margin: 20px;
+    border: 2px solid green;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.Cont_text_img{
+    border: 2px solid red;
+}
+/*Estilos para los botones */
 .boton{
+position: relative;
+border: 2px solid white;
+border-radius: 20px;
+width: 280px;
+height: 60px;
+font-size: 20px;
+}
+
+.inf_txt{
     position: relative;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 15%;
-    height: 40px;
-}
-.col{
-    background-color: blue;
-}
-.colt{
-    background-color: #FFFFFF;
-}
-a{
+    display: block;
+    margin-left: 400px;
+    align-items: center;
+    width: 600px;
+    height: 80px;
+   /*border: 3px solid;*/
 
 }
+
 
 
 
