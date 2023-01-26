@@ -15,9 +15,8 @@ body{
 
 
 .Tam_text{
-display: flex;
-flex-flow: row nowrap;
-background-color: red;   
+flex-flow: row nowrap;/*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
+/*background-color: red;   */
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border:1px solid;
 width: 80%;
@@ -27,7 +26,6 @@ border-radius: 32px;
 }
 
 .Texto_Encrit{
-display: flex;
 flex-flow: column nowrap;
 background: #FFFFFF;
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -35,6 +33,43 @@ border-radius: 32px;
 border: 1px solid;
 width: 400px;
 height: 830px;
+
+}
+.Form_text {
+  border: 2px solid;
+display: block;
+align-items: center;
+
+
+
+}
+.input_text{
+    vertical-align: 30px;
+    border: 2px solid;
+    resize: none;
+    align-items: center;
+    width:90%;
+    height: 630px;
+    margin: auto;
+
+
+
+
+}
+.boton{
+    position: relative;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 15%;
+    height: 40px;
+}
+.col{
+    background-color: blue;
+}
+.colt{
+    background-color: #FFFFFF;
+}
+a{
 
 }
 
