@@ -1,153 +1,165 @@
-body{
-background: #F3F5FC;
-box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/ 
+body {
+  background: #f3f5fc;
+  box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
 }
-.bloque{
-align-items: center;
-margin: 20px auto; 
-/*border: 2px solid;*/
-width: 85%;
-display: flex;
-vertical-align: auto;
+.bloque {
+  align-items: center;
+  margin: 20px auto;
+  /*border: 2px solid;*/
+  width: 85%;
+  display: flex;
+  vertical-align: auto;
 }
 /*Estilo el cuadro de texto*/
-.Tam_text{
-flex-flow: row nowrap;/*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
-/*background-color: red;   */
-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-/*border:1px solid;*/
-width: 80%;
-height: 830px;
-border-radius: 32px;
-
-
+.Tam_text {
+  flex-flow: row nowrap; /*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
+  /*background-color: red;   */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  /*border:1px solid;*/
+  width: 80%;
+  height: 830px;
+  border-radius: 32px;
 }
 /*Agregamos estilos al texto interno del input*/
-.input_text::placeholder{
-font-family: 'Poppins', sans-serif;
-color: #0A3871;
-opacity: 0.8;
-
+.input_text::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #0a3871;
+  opacity: 0.8;
 }
-.Texto_Encrit{
-flex-flow: column nowrap;
-background: #FFFFFF;
-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-border-radius: 32px;
-/*border: 1px solid;*/
-width: 400px;
-height: 830px;
-
+.Texto_Encrit {
+  flex-flow: column nowrap;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  /*border: 1px solid;*/
+  width: 400px;
+  height: 830px;
 }
-.Form_text p{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #495057;
-opacity: 0.9;
+.Form_text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #495057;
+  opacity: 0.9;
 }
 .Form_text {
-/*border: 3px solid red;*/
-align-items: center;
-
+  /*border: 3px solid red;*/
+  align-items: center;
 }
 /*Estilo al cuadro de texto*/
-.input_text{ 
-background: #F3F5FC;
-/*border: 2px solid;*/
-border: none;
-resize: none;
-width:90%;
-height: 630px;
-margin-left: 50px;
-border-radius: 20px;
-font-size: 40px;
-font-family: 'Poppins', sans-serif;
-color: #0A3871;
-
+.input_text {
+  background: #f3f5fc;
+  /*border: 2px solid;*/
+  border: none;
+  resize: none;
+  width: 90%;
+  height: 630px;
+  margin-left: 50px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #0a3871;
 }
 /*Se activa cuando el usuario da clic en el elemento la funcion outline quita el borde al momento de precionar*/
-.input_text:focus{
-    outline: none;
+.input_text:focus {
+  outline: none;
 }
 /*Estilos para Imgen en encriptado*/
-.mun_img{
-/*border: 2px solid ;*/
-align-items: center;
-
+.mun_img {
+  /*border: 2px solid ;*/
+  align-items: center;
 }
-.Mensaje{
-    margin: 20px;
+.Mensaje {
+  margin: 20px;
   /*  border: 2px solid rebeccapurple; */
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    color: #343A40;
-    align-self: stretch;
-    font-weight: bold;
-
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
+  align-self: stretch;
+  font-weight: bold;
 }
-.Mensaje2{
-    margin: 20px;
-    /*border: 2px solid green;*/
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 16px;
-    opacity: 0.8;
+.Mensaje2 {
+  margin: 20px;
+  /*border: 2px solid green;*/
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
 }
-.Cont_text_img{
-    margin-top:50%;
-   /* border: 2px solid red;*/
+.Cont_text_img {
+    display: none;
+  margin-top: 50%;
+  /* border: 2px solid red;*/
 }
 /*Estilos para los botones */
-.boton{
-position: relative;
-border: 2px solid white;
-border-radius: 20px;
-width: 280px;
-height: 60px;
-font-size: 20px;
-margin-left: 15px;
+.boton {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 280px;
+  height: 60px;
+  font-size: 20px;
+  margin-left: 15px;
 }
 
-.inf_txt{
-    position: relative;
-    display: block;
-    margin-left: 400px;
+.inf_txt {
+  position: relative;
+  display: block;
+  margin-left: 350px;
+  align-items: center;
+  width: 700px;
+  height: 90px;
+  border: 3px solid red;
+}
+/*Objeto de mostrar cuando el usuario obtenga un encriptado*/
+.Cont_text{
+    /*display: none;*/
+margin-top: 0;
+ /*border: 2px solid;*/
+}
+.label_text{
     align-items: center;
-    width: 600px;
-    height: 90px;
-   border: 3px solid;
+    border: none;
+    outline: none;
+    width: 100%; 
+ /*border: 2px solid blue;*/
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Contacto{
-border: 1px solid;
-padding: 30px;
-margin: 20px;
+.label{
+    margin: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+    border-radius: 20px;
+    height: 640px;
+    width: 85%;
+    font-family: "Poppins", sans-serif;
+    color: #0a3871;
+    font-size: 25px;
+    background: #ffffff;
+   /* border: 2px solid red;*/
 }
 
-footer{
-background-color: aqua;
-    border: 1px solid; 
+.Cp_text{
+/* border: 2px solid red;*/
+    margin: 20px;
+    /*border: 2px solid green;*/
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    padding: 40px;
+}
+/*Contacto con el programador*/
+.Contacto {
+  border: 1px solid;
+  padding: 30px;
+  margin: 20px;
+}
 
+footer {
+  background-color: aqua;
+  border: 1px solid;
+  text-align: center;
+  padding: 40px;
 }

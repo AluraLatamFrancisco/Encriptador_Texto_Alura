@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <title>EncriptadorJS</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-<section class="alin">
-    <div class="bloque">
-<div class="Tam_text">
-    <div>
-<img class="logo" src="img/Logo2.png" alt="Logo de Alura">
-</div>
-<!--Formulario de ingreso de datos--> 
-<form class="Form_text" method="post" >
-<textarea class="input_text" type="text" placeholder="Ingrese texto aquí" ></textarea>
-<div class="inf_txt">
-<p > <img src="https://api.iconify.design/bi/exclamation-circle-fill.svg" alt="exclamacion"> letras minúsculas y sin acentos </p>
-<input style="background: #0A3871; color: #ffff;" class="boton col" value="Encriptar" type="submit"  >
-<input class="boton col " value="Desencriptar" type="submit"  >
-</div>
-</form>
-</div>
-<!--Datos Encriptados mostrados--> 
-<div class="Texto_Encrit">
-
-    <div class="Cont_text_img">
-    <div class="mun_img">
-    <img  src="img/Muñeco.png" alt="Muneco">
-    </div>
-    <div class="Mensaje">
-        <p >Ningún mensaje fue encontrado</p>
-    </div>
-    <div class="Mensaje2" >
-        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        
+      <section class="alin">
+        <div class="bloque">
+          <div class="Tam_text">
+            <div>
+              <img class="logo" src="img/Logo2.png" alt="Logo de Alura" />
             </div>
-  
-</div>
+            <!--Formulario de ingreso de datos-->
+            <form class="Form_text" id="Datos_form" method="post">
+              <textarea
+                class="input_text" id="textarea"
+                type="text"
+                placeholder="Ingrese texto aquí"></textarea>
+              <div class="inf_txt">
+                <p>
+                  <img
+                    src="https://api.iconify.design/bi/exclamation-circle-fill.svg"
+                    alt="exclamacion"
+                  />
+                  letras minúsculas y sin acentos
+                </p>
+                <input style="background: #0a3871; color: #ffff" class="boton col" value="Encriptar"
+                  type="button" onclick="Encriptado()"/>
+                <input class="boton col" value="Desencriptar" type="button" onclick="Desencriptado()"/>
+              </div>
+            </form>
+          </div>
+          <!--Datos Encriptados mostrados imgaen sin texto-->
+          <div class="Texto_Encrit">
+            <div class="Cont_text_img" id="Resul_Encr">
+              <div class="mun_img">
+                <img src="img/Muñeco.png" alt="Muneco" />
+              </div>
+              <div class="Mensaje">
+                <p>Ningún mensaje fue encontrado</p>
+              </div>
+              <div class="Mensaje2">
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+            </div>
+             <!--Datos Encriptados mostrados sin imagen con el boton de copiar-->
+            <div class="Cont_text" id="Resul_Encr">
+                <div class="label_text">
+               <textarea  readonly="readonly" class="label" name="" id="Resul" cols="30" rows="10"></textarea>
+                </div>
+                <div class="Cp_text">
+                  <input type="button" class=" boton col" value="!copiar¡">
+                </div>
+              </div>
 
-</div>
-</div>
-</section>
-<section class="setio">
-<div class="Contacto">
-</div>
-</section>
+          </div>
+        </div>
+      </section>
+      <section class="setio">
+        <div class="Contacto"></div>
+      </section>
     </main>
     <footer>
       <div class="foot">
         <p></p>
-     <p class="foot">&copy; Copyright By Francisco Back</p>
+        <p class="foot">&copy; Copyright By Francisco Back</p>
       </div>
     </footer>
-    
     <script src="js/Encriptador.js"></script>
-</body>
+  </body>
 </html>
