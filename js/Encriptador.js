@@ -6,20 +6,42 @@ o= ober
 u=ufat
 */
 
-function Encriptado(datos) {
+function Encriptado() {
   var datos = document.getElementById("textarea").value;
-  alert(datos);
+
+  if(datos!=""){
+    alert(datos);
   document.getElementById("textarea").value = "";
   var resul=EnvioEncrip(datos);
   console.log(resul);
  document.getElementById("Resul").innerText=resul;
+ document.getElementById("Resul_Encr").style.display='none';
+ document.getElementById("Resultado").style.display='contents';
+}else{
+    alert("Dato Vacio"+datos);
+    document.getElementById("Resul_Encr").style.display='block';
+    document.getElementById("Resultado").style.display='none';
+
 }
 
-function Desencriptado(datos) {
-  var datos = document.getElementById("textarea").value;
-  alert(datos);
-  document.getElementById("textarea").value = "";
-  EnvioDesencr(datos);
+}
+
+function Desencriptado() {
+    var datos = document.getElementById("textarea").value;
+    if(datos!=""){
+        alert(datos);
+      document.getElementById("textarea").value = "";
+      var resul=EnvioDesencr(datos);
+      console.log(resul);
+     document.getElementById("Resul").innerText=resul;
+     document.getElementById("Resul_Encr").style.display='none';
+     document.getElementById("Resultado").style.display='contents';
+    }else{
+        alert("Dato Vacio"+datos);
+        document.getElementById("Resul_Encr").style.display='block';
+        document.getElementById("Resultado").style.display='none';
+    
+    }
 }
 /*Metodo que realizar el reemplazo de los datos para por nuevos valores*/
 function EnvioEncrip(datos) {
@@ -54,26 +76,9 @@ function EnvioEncrip(datos) {
   console.log(linea);
   return linea;
 }
+//utilizamos la funcion que viene en js de reemplazar los datos
 function EnvioDesencr(datos) {
-  for (let i = 0; i < datos.length; i++) {
-    const element = datos[i];
-    console.log(element);
-    switch (element) {
-      case "ai":
-        break;
-      case "enter":
-        break;
-      case "imes":
-        break;
-      case "ober":
-        break;
-      case "ufat":
-        break;
-      case "_":
-        break;
-      default:
-    }
-  }
-
-  return datos;
+   var tem=datos.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
+   /* console.log(tem);*/
+    return tem;
 }

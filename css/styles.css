@@ -89,7 +89,6 @@ body {
   opacity: 0.8;
 }
 .Cont_text_img {
-    display: none;
   margin-top: 50%;
   /* border: 2px solid red;*/
 }
@@ -102,24 +101,28 @@ body {
   height: 60px;
   font-size: 20px;
   margin-left: 15px;
+
 }
 
 .inf_txt {
   position: relative;
-  display: block;
+  display: inline-block;
   margin-left: 350px;
   align-items: center;
   width: 700px;
   height: 90px;
-  border: 3px solid red;
+ /* border: 3px solid red;*/
+    
 }
 /*Objeto de mostrar cuando el usuario obtenga un encriptado*/
 .Cont_text{
-    /*display: none;*/
+    display: none;
+    
 margin-top: 0;
  /*border: 2px solid;*/
 }
 .label_text{
+   
     align-items: center;
     border: none;
     outline: none;
@@ -156,8 +159,13 @@ margin-top: 0;
   padding: 30px;
   margin: 20px;
 }
+.foot{
+    font-family: "Poppins", sans-serif;
+    color: #0a3871;
+}
 
 footer {
+   
   background-color: aqua;
   border: 1px solid;
   text-align: center;

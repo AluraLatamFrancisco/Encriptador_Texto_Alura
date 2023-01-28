@@ -36,9 +36,9 @@
                   />
                   letras minúsculas y sin acentos
                 </p>
-                <input style="background: #0a3871; color: #ffff" class="boton col" value="Encriptar"
+                <input style="background: #0a3871; color: #ffff; border-color: #0A3871; " class="boton col" value="Encriptar"
                   type="button" onclick="Encriptado()"/>
-                <input class="boton col" value="Desencriptar" type="button" onclick="Desencriptado()"/>
+                <input style="border-color: #0A3871; color: #0A3871; " class="boton col" value="Desencriptar" type="button" onclick="Desencriptado()"/>
               </div>
             </form>
           </div>
@@ -56,12 +56,12 @@
               </div>
             </div>
              <!--Datos Encriptados mostrados sin imagen con el boton de copiar-->
-            <div class="Cont_text" id="Resul_Encr">
+            <div class="Cont_text" id="Resultado">
                 <div class="label_text">
                <textarea  readonly="readonly" class="label" name="" id="Resul" cols="30" rows="10"></textarea>
                 </div>
                 <div class="Cp_text">
-                  <input type="button" class=" boton col" value="!copiar¡">
+                  <input style="border-color: #0A3871; color: #0A3871; "  type="button" class=" boton col" value="!copiar¡">
                 </div>
               </div>
 
@@ -69,15 +69,12 @@
         </div>
       </section>
       <section class="setio">
-        <div class="Contacto"></div>
+        <div class="Contacto">
+          <p class="foot">Designed By Francisco Back</p>
+          <i class="fab fa-github"></i>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="foot">
-        <p></p>
-        <p class="foot">&copy; Copyright By Francisco Back</p>
-      </div>
-    </footer>
     <script src="js/Encriptador.js"></script>
   </body>
 </html>
