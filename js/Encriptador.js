@@ -82,3 +82,13 @@ function EnvioDesencr(datos) {
    /* console.log(tem);*/
     return tem;
 }
+
+
+function Copy(){
+var Result=document.getElementById("Resul");   
+Result.select();
+document.execCommand('copy');
+document.getElementById("Resul_Encr").style.display='block';
+document.getElementById("Resultado").style.display='none';
+
+}

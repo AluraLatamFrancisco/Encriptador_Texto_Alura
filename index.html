@@ -25,9 +25,11 @@
             <!--Formulario de ingreso de datos-->
             <form class="Form_text" id="Datos_form" method="post">
               <textarea
-                class="input_text" id="textarea"
+                class="input_text"
+                id="textarea"
                 type="text"
-                placeholder="Ingrese texto aquí"></textarea>
+                placeholder="Ingrese texto aquí"
+              ></textarea>
               <div class="inf_txt">
                 <p>
                   <img
@@ -36,9 +38,24 @@
                   />
                   letras minúsculas y sin acentos
                 </p>
-                <input style="background: #0a3871; color: #ffff; border-color: #0A3871; " class="boton col" value="Encriptar"
-                  type="button" onclick="Encriptado()"/>
-                <input style="border-color: #0A3871; color: #0A3871; " class="boton col" value="Desencriptar" type="button" onclick="Desencriptado()"/>
+                <input
+                  style="
+                    background: #0a3871;
+                    color: #ffff;
+                    border-color: #0a3871;
+                  "
+                  class="boton col"
+                  value="Encriptar"
+                  type="button"
+                  onclick="Encriptado()"
+                />
+                <input
+                  style="border-color: #0a3871; color: #0a3871"
+                  class="boton col"
+                  value="Desencriptar"
+                  type="button"
+                  onclick="Desencriptado()"
+                />
               </div>
             </form>
           </div>
@@ -55,23 +72,42 @@
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
               </div>
             </div>
-             <!--Datos Encriptados mostrados sin imagen con el boton de copiar-->
+            <!--Datos Encriptados mostrados sin imagen con el boton de copiar-->
             <div class="Cont_text" id="Resultado">
-                <div class="label_text">
-               <textarea  readonly="readonly" class="label" name="" id="Resul" cols="30" rows="10"></textarea>
-                </div>
-                <div class="Cp_text">
-                  <input style="border-color: #0A3871; color: #0A3871; "  type="button" class=" boton col" value="!copiar¡">
-                </div>
+              <div class="label_text">
+                <textarea
+                  readonly="readonly"
+                  class="label"
+                  name=""
+                  id="Resul"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
-
+              <div class="Cp_text">
+                <input
+                  style="border-color: #0a3871; color: #0a3871"
+                  type="button"
+                  class="boton col"
+                  value="!copiar¡"
+                  onclick="Copy()"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="setio">
         <div class="Contacto">
           <p class="foot">Designed By Francisco Back</p>
-          <i class="fab fa-github"></i>
+          <div>
+            <a href="#">
+          <img class="github" src="img/github.svg"/>
+        </a>
+              <a href="#">
+        <img class="linkedin" src="img/linkedin.svg"/>
+      </a>
+          </div>
         </div>
       </section>
     </main>
