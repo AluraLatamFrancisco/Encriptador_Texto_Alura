@@ -1,5 +1,6 @@
 main{
   padding: 40px;
+  min-height: 100%;
 }
 body {
   background: #f3f5fc;
