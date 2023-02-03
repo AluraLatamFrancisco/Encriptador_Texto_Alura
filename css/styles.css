@@ -1,3 +1,6 @@
+main{
+  padding: 40px;
+}
 body {
   background: #f3f5fc;
   box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
@@ -113,7 +116,7 @@ body {
   align-items: center;
   width: 700px;
   height: 90px;
- /* border: 3px solid red;*/
+  /*border: 3px solid red;*/
     
 }
 /*Objeto de mostrar cuando el usuario obtenga un encriptado*/
