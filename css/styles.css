@@ -1,29 +1,29 @@
-main{
-  padding: 40px;
-  min-height: 100%;
-}
+
 body {
   background: #f3f5fc;
   box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+.alin{
+  padding: 2% 6% 0% 6%;
 }
 .bloque {
+  padding: 0% 5% 0% 5%;
   align-items: center;
-  margin: 20px auto;
   /*border: 2px solid;*/
-  width: 85%;
+  width: 90%;
   display: flex;
-  vertical-align: auto;
 }
 /*Estilo el cuadro de texto*/
 .Tam_text {
   flex-flow: row nowrap; /*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
   /*background-color: red;   */
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  /*border:1px solid;*/
+  box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
+  border:1px solid;
   width: 80%;
-  height: 830px;
+  height: 790px;
   border-radius: 32px;
 }
 /*Agregamos estilos al texto interno del input*/
@@ -35,11 +35,13 @@ body {
 .Texto_Encrit {
   flex-flow: column nowrap;
   background: #ffffff;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
   border-radius: 32px;
+  width: 30%;
+  height: 790px;
   /*border: 1px solid;*/
-  width: 400px;
-  height: 830px;
+ /* width: 400px;
+  height: 830px;*/
 }
 .Form_text p {
   font-family: "Inter";
@@ -61,7 +63,7 @@ body {
   resize: none;
   width: 90%;
   height: 630px;
-  margin-left: 50px;
+
   border-radius: 20px;
   font-size: 40px;
   font-family: "Poppins", sans-serif;
