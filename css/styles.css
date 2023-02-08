@@ -2,9 +2,8 @@
 body {
   background: #f3f5fc;
   box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
-  display: flex;
   flex-wrap: wrap;
-  width: 100%;
+
 }
 .alin{
   padding: 2% 6% 0% 6%;
@@ -12,9 +11,9 @@ body {
 .bloque {
   padding: 0% 5% 0% 5%;
   align-items: center;
-  /*border: 2px solid;*/
-  width: 90%;
+  border: 2px solid;
   display: flex;
+
 }
 /*Estilo el cuadro de texto*/
 .Tam_text {
@@ -38,7 +37,7 @@ body {
   box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   width: 30%;
-  height: 790px;
+  height: 50em;
   /*border: 1px solid;*/
  /* width: 400px;
   height: 830px;*/
@@ -61,20 +60,25 @@ body {
   /*border: 2px solid;*/
   border: none;
   resize: none;
-  width: 90%;
-  height: 630px;
+  width: 80%;
+  height: 15em;
 
   border-radius: 20px;
   font-size: 40px;
-  font-family: "Poppins", sans-serif;
+
   color: #0a3871;
 }
 /*Se activa cuando el usuario da clic en el elemento la funcion outline quita el borde al momento de precionar*/
 .input_text:focus {
   outline: none;
 }
+/*Estilos para la imagen*/
+.mun_img img{
+  width: 100%;
+
+}
 /*Estilos para Imgen en encriptado*/
-.mun_img {
+.mun_img .Mensaje .Mensaje2 {
   /*border: 2px solid ;*/
   align-items: center;
 }
@@ -102,30 +106,25 @@ body {
 }
 /*Estilos para los botones */
 .boton {
-  position: relative;
   border: 2px solid white;
   border-radius: 20px;
-  width: 280px;
-  height: 60px;
+  width: 35%;
+  height: 70%;
   font-size: 20px;
-  margin-left: 15px;
 
 }
 
 .inf_txt {
+  padding-left: 20%;
   position: relative;
-  display: inline-block;
-  margin-left: 350px;
   align-items: center;
-  width: 700px;
   height: 90px;
-  /*border: 3px solid red;*/
+  border: 3px solid red;
     
 }
 /*Objeto de mostrar cuando el usuario obtenga un encriptado*/
 .Cont_text{
     display: none;
-    
 margin-top: 0;
  /*border: 2px solid;*/
 }
@@ -163,6 +162,7 @@ margin-top: 0;
 }
 /*Contacto con el programador*/
 .Contacto {
+  padding: 0% 6% 2% 6%;
   align-items: center;
   text-align: center;
  /* border: 1px solid;*/
