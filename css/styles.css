@@ -11,8 +11,9 @@ body {
 .bloque {
   padding: 0% 5% 0% 5%;
   align-items: center;
-  border: 2px solid;
+ /* border: 2px solid red;*/
   display: flex;
+  height: max-content;
 
 }
 /*Estilo el cuadro de texto*/
@@ -20,9 +21,9 @@ body {
   flex-flow: row nowrap; /*Colocamos los cuadro uno a la par de otro siempre que esten declarados de mejor manera*/
   /*background-color: red;   */
   box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
-  border:1px solid;
+  /*border:1px solid;*/
   width: 80%;
-  height: 790px;
+  height: 50em;
   border-radius: 32px;
 }
 /*Agregamos estilos al texto interno del input*/
@@ -61,7 +62,7 @@ body {
   border: none;
   resize: none;
   width: 80%;
-  height: 15em;
+  height: 550px;
 
   border-radius: 20px;
   font-size: 40px;
@@ -119,7 +120,7 @@ body {
   position: relative;
   align-items: center;
   height: 90px;
-  border: 3px solid red;
+ /* border: 3px solid red;*/
     
 }
 /*Objeto de mostrar cuando el usuario obtenga un encriptado*/
@@ -166,8 +167,6 @@ margin-top: 0;
   align-items: center;
   text-align: center;
  /* border: 1px solid;*/
-  padding: 10px;
-  margin: 10px;
   font-family: "Poppins", sans-serif;
   color: #0a3871;
   font-size: 20px;
@@ -192,5 +191,13 @@ margin-top: 0;
 
 }
 
+/*MEDIA*/
+@media (max-width:1264px){
+body{
+  background-color: black;
+}
+
+}
+  
 
 
