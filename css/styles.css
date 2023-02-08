@@ -192,10 +192,23 @@ margin-top: 0;
 }
 
 /*MEDIA*/
-@media (max-width:1264px){
+@media (max-width:1287px){
 body{
   background-color: black;
 }
+.Texto_Encrit{
+  height: 40em;
+}
+.Tam_text{
+  height: 40em;
+}
+.input_text{
+  height: 500px;
+}
+.Contacto{
+  padding: 2% 6% 2% 6%;
+}
+
 
 }
   
