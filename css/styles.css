@@ -10,10 +10,9 @@ body {
 }
 .bloque {
   padding: 0% 5% 0% 5%;
-  align-items: center;
  /* border: 2px solid red;*/
   display: flex;
-  height: max-content;
+
 
 }
 /*Estilo el cuadro de texto*/
@@ -116,6 +115,7 @@ body {
 }
 
 .inf_txt {
+  padding-top: 8%;
   padding-left: 20%;
   position: relative;
   align-items: center;
@@ -194,21 +194,36 @@ margin-top: 0;
 /*MEDIA*/
 @media (max-width:1304px){
 body{
-  background-color: black;
+/*  background-color: blue  ;*/
 }
 .Texto_Encrit{
-  height: 40em;
+  box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
+  height: 510px;
 }
 .Tam_text{
-  height: 40em;
+  height: 29em;
 }
+.inf_txt{
+  padding-top: 2%;
+}
+.Cont_text_img {
+  margin-top: 30%;}
 .input_text{
-  height: 500px;
+  height: 350px;
+}
+.label_text{
+  
+}
+.label{
+  height: 50%;
+
 }
 .Contacto{
-  padding: 2% 6% 2% 6%;
+  padding: 4.5% 6% 2% 6%;
 }
-
+.Mensaje {
+  margin: 0px;
+}
 
 }
   
