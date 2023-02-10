@@ -200,9 +200,7 @@ width: 85%;
 /*MEDIA*/
 
 @media (max-width:1304px){
-body{
-/*  background-color: blue  ;*/
-}
+
 .Texto_Encrit{
   box-shadow: 0px 24% 32% -8% rgba(0, 0, 0, 0.08);
   height: 510px;
@@ -217,9 +215,6 @@ body{
   margin-top: 30%;}
 .input_text{
   height: 350px;
-}
-.label_text{
-  
 }
 .label{
   height: 50%;
@@ -240,9 +235,7 @@ body{
 
 }
 @media (max-width:768px){
-  body{
-   /* background-color: red;*/
-  }
+
   .bloque{
     display: grid;
   }
@@ -264,7 +257,7 @@ body{
 
 }
 .Texto_Encrit{
-  margin-top: 15%;
+  margin-top: 20%;
   width: 100%;
   height: 100%;
 }
@@ -284,7 +277,7 @@ element.style {
   margin-top: 15%;
 }
 .Contacto{
-  margin-top: 10%;
+  margin-top: 19%;
 }
 
 
@@ -297,9 +290,7 @@ element.style {
 
 
 @media (max-width:412px){
-  body{
-    background-color: blueviolet;
-  }
+
   .inf_txt {
     padding-top: 2%;
     width: 100%;
@@ -319,7 +310,7 @@ height: 200px;
     margin-top: 50%;
 }
 .Texto_Encrit{
-  margin-top: 45%;
+  margin-top: 55%;
 }
 .label{
   height: 220px;
